@@ -33,8 +33,8 @@ export const services: Service[] = [
   {
     slug: "consultoria-empresarial",
     eyebrow: "Estratégia que sai do papel",
-    title: "Consultoria Empresarial",
-    summary: "Diagnóstico, planejamento e processos para transformar intenção de crescimento em direção prática.",
+    title: "Assessoria Empresarial",
+    summary: "Nossa principal frente de atuação: assessoria integrada em gestão, finanças, pessoas e processos para apoiar a rotina e as decisões da empresa.",
     description: "Analisamos o momento da empresa, identificamos gargalos e estruturamos um plano objetivo, com prioridades, responsáveis e indicadores.",
     outcomes: ["Prioridades bem definidas", "Processos mais eficientes", "Crescimento com método"],
     deliverables: ["Diagnóstico empresarial", "Planejamento estratégico", "Mapeamento e melhoria de processos", "Indicadores e plano de ação"],
