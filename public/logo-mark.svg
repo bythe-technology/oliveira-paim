@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Oliveira e Paim">
+  <rect width="120" height="120" rx="22" fill="#071b31"/>
+  <path d="M24 34h72M34 34v52M86 34v52M34 60h52" fill="none" stroke="#d6a853" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="60" cy="60" r="47" fill="none" stroke="#d6a853" stroke-width="2" opacity=".65"/>
+</svg>

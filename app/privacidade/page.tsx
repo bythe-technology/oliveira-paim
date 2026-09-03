@@ -1,0 +1,6 @@
+import type { Metadata } from "next";
+import { PageHero } from "@/components/section";
+import { site } from "@/lib/site";
+
+export const metadata: Metadata = { title: "Política de Privacidade", robots: { index: true, follow: true } };
+export default function PrivacidadePage() { return <><PageHero eyebrow="Privacidade" title="Transparência no tratamento de informações." text="Esta página explica, em linguagem simples, como o site lida com dados e serviços de terceiros." /><article className="section legal"><div className="narrow"><h2>Dados enviados pelo visitante</h2><p>O formulário de diagnóstico funciona no navegador e prepara uma mensagem para o WhatsApp. As respostas não são armazenadas em banco de dados deste site.</p><h2>Plataformas de terceiros</h2><p>Ao acessar links para WhatsApp, Instagram ou LinkedIn, o visitante passa a utilizar serviços sujeitos às políticas das respectivas plataformas.</p><h2>Dados técnicos</h2><p>A infraestrutura de hospedagem pode processar informações técnicas necessárias para segurança e funcionamento, como endereço IP, navegador e registros de acesso, conforme seus próprios termos.</p><h2>Contato</h2><p>Dúvidas relacionadas a esta política podem ser enviadas para <a href={`mailto:${site.email}`}>{site.email}</a>.</p><p className="muted">Última atualização: setembro de 2026.</p></div></article></>; }
