@@ -6,6 +6,7 @@ export type Service = {
   description: string;
   outcomes: string[];
   deliverables: string[];
+  heroImage: string;
   commercialOffer?: {
     price: string;
     period: string;
@@ -22,6 +23,7 @@ export const services: Service[] = [
     description: "Assumimos processos financeiros essenciais e transformamos dados dispersos em uma visão gerencial confiável para apoiar decisões mais seguras.",
     outcomes: ["Mais previsibilidade de caixa", "Rotina financeira organizada", "Decisões apoiadas por indicadores"],
     deliverables: ["Contas a receber", "Contas a pagar", "Controle de transferências", "Conciliação bancária", "Relatórios gerenciais e indicadores financeiros", "Fluxo de caixa mensal e anual", "Precificação e consultoria financeira", "Sistema financeiro incluso"],
+    heroImage: "/images/instagram/luis-financeiro.webp",
     commercialOffer: {
       price: "R$ 890",
       period: "por mês",
@@ -36,6 +38,7 @@ export const services: Service[] = [
     description: "Analisamos o momento da empresa, identificamos gargalos e estruturamos um plano objetivo, com prioridades, responsáveis e indicadores.",
     outcomes: ["Prioridades bem definidas", "Processos mais eficientes", "Crescimento com método"],
     deliverables: ["Diagnóstico empresarial", "Planejamento estratégico", "Mapeamento e melhoria de processos", "Indicadores e plano de ação"],
+    heroImage: "/images/instagram/socios.webp",
   },
   {
     slug: "gestao-de-pessoas",
@@ -45,6 +48,7 @@ export const services: Service[] = [
     description: "Apoiamos a empresa na construção de equipes mais alinhadas, lideranças preparadas e políticas transparentes para desenvolver e reter talentos.",
     outcomes: ["Papéis e expectativas claros", "Lideranças mais preparadas", "Maior coerência na gestão"],
     deliverables: ["Recrutamento e seleção", "Cargos, salários e competências", "Avaliação de desempenho", "Treinamento e desenvolvimento"],
+    heroImage: "/images/instagram/luis-executivo.png",
   },
   {
     slug: "compliance-juridico",
@@ -54,6 +58,7 @@ export const services: Service[] = [
     description: "Traduzimos exigências jurídicas e de integridade em instrumentos práticos que protegem relações, dados, reputação e continuidade do negócio.",
     outcomes: ["Riscos identificados mais cedo", "Relações comerciais protegidas", "Governança proporcional ao negócio"],
     deliverables: ["Revisão e elaboração de contratos", "Compliance e códigos internos", "LGPD e proteção de dados", "Orientação jurídica empresarial"],
+    heroImage: "/images/instagram/eduardo-juridico.png",
   },
 ];
 
@@ -65,6 +70,7 @@ export type Article = {
   readTime: string;
   intro: string;
   sections: { title: string; body: string }[];
+  coverImage: string;
 };
 
 export const articles: Article[] = [
@@ -80,6 +86,7 @@ export const articles: Article[] = [
       { title: "Transformar análise em prioridade", body: "O valor não está em produzir um documento extenso, mas em definir o que precisa acontecer primeiro, quem conduz cada frente e como acompanhar a evolução." },
       { title: "Criar um ponto de partida confiável", body: "Com informações organizadas, a liderança reduz decisões reativas e passa a comparar cenários com mais clareza." },
     ],
+    coverImage: "/images/strategy-session.png",
   },
   {
     slug: "bpo-financeiro-organizacao",
@@ -93,6 +100,7 @@ export const articles: Article[] = [
       { title: "Controle não é centralização", body: "A empresa continua decidindo. A assessoria executa e organiza a informação para que os responsáveis tenham visibilidade e façam escolhas com segurança." },
       { title: "Acompanhamento consultivo", body: "Relatórios ganham utilidade quando são interpretados no contexto do negócio e conectados às próximas decisões." },
     ],
+    coverImage: "/images/instagram/luis-financeiro.webp",
   },
   {
     slug: "contratos-como-protecao",
@@ -106,6 +114,7 @@ export const articles: Article[] = [
       { title: "Prevenir custa menos", body: "Revisar condições antes da assinatura costuma ser mais simples do que reconstruir evidências e negociar soluções quando o problema já existe." },
       { title: "Contrato também organiza", body: "Além da proteção jurídica, uma boa redação melhora a comunicação entre áreas e parceiros." },
     ],
+    coverImage: "/images/instagram/eduardo-juridico.png",
   },
   {
     slug: "compliance-lgpd-pmes",
@@ -119,5 +128,6 @@ export const articles: Article[] = [
       { title: "Políticas que funcionam", body: "Regras internas precisam ser claras, acessíveis e conectadas à rotina. Documentos que ninguém conhece não mudam comportamentos." },
       { title: "Confiança como ativo", body: "Clientes e parceiros valorizam empresas que demonstram responsabilidade na gestão de informações e relações." },
     ],
+    coverImage: "/images/instagram/governanca-abstrata.png",
   },
 ];
