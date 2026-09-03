@@ -13,3 +13,12 @@
 @media (prefers-reduced-motion:no-preference){.reveal{animation:none;opacity:0;transform:translateY(24px);transition:opacity 600ms cubic-bezier(.4,0,.2,1),transform 600ms cubic-bezier(.4,0,.2,1);transition-delay:var(--reveal-delay,0ms)}.reveal.is-visible{opacity:1;transform:none}.service-orbit{animation:ambientOrbit 9s ease-in-out infinite}.service-orbit-two{animation-delay:-4s}.strip-grid a svg{transition:transform 350ms cubic-bezier(.4,0,.2,1)}.strip-grid a:hover svg{transform:translateY(-3px) scale(1.08)}}
 @media(max-width:900px){.instagram-heading{align-items:flex-start;flex-direction:column}.instagram-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.brand-mark{width:34px;height:34px}.brand-main{font-size:16px}.brand-sub{font-size:7px}.instagram-grid{grid-template-columns:1fr}.instagram-card span{opacity:1;transform:none}.service-card{min-height:330px}}
+
+/* Refined brand lockup and team photography */
+.brand{gap:0}.team-grid .team-card{display:grid;grid-template-columns:210px 1fr;gap:0;padding:0;min-height:300px;overflow:hidden;background:#0a2742}.team-photo{position:relative;min-height:300px}.team-photo img{object-position:center top}.team-copy{align-self:center;padding:34px}.team-copy>span{display:block;margin-bottom:8px;color:var(--gold);font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase}.team-copy h3{font-size:30px}.team-copy p{margin-bottom:0}
+.founders-photo img{object-position:center 28%}
+.hero-founders{object-position:center center}
+.hero-founders-mobile{display:none}
+@media(max-width:900px){.team-grid .team-card{grid-template-columns:190px 1fr}}
+@media(max-width:600px){.team-grid .team-card{grid-template-columns:1fr}.team-photo{min-height:390px}.team-copy{padding:28px}}
+@media(max-width:600px){.hero-desktop-image{display:none}.hero-founders-mobile{display:block;object-position:center 18%}.hero-overlay{background:linear-gradient(90deg,rgba(4,18,33,.9),rgba(4,18,33,.66))}}
