@@ -24,7 +24,7 @@ export function Header() {
         </nav>
         <Link href="/diagnostico" className="button button-gold nav-cta">Agendar diagnóstico</Link>
         <button className="menu-toggle" onClick={() => setOpen(!open)} aria-expanded={open} aria-controls="mobile-menu" aria-label={open ? "Fechar menu" : "Abrir menu"}>
-          {open ? <X size={26} /> : <List size={28} />}
+          {open ? <X size={26} aria-hidden="true" /> : <List size={28} aria-hidden="true" />}
         </button>
       </div>
       <div id="mobile-menu" className={`mobile-nav ${open ? "is-open" : ""}`}>

@@ -6,5 +6,5 @@ export function SectionTitle({ eyebrow, title, text, center = false }: { eyebrow
 }
 
 export function PageHero({ eyebrow, title, text, image, imageAlt, children }: { eyebrow: string; title: string; text: string; image: string; imageAlt: string; children?: ReactNode }) {
-  return <section className="page-hero"><div className="page-hero-glow" /><div className="container page-hero-inner"><div className="page-hero-copy"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{text}</p>{children}</div><div className="page-hero-media"><Image src={image} alt={imageAlt} fill priority sizes="(max-width: 900px) 100vw, 42vw" /></div></div></section>;
+  return <section className="page-hero"><Image className="page-hero-background" src={image} alt={imageAlt} fill priority sizes="100vw" /><div className="page-hero-overlay" /><div className="container page-hero-inner"><div className="page-hero-copy"><span className="eyebrow">{eyebrow}</span><h1>{title}</h1><p>{text}</p>{children}</div></div></section>;
 }

@@ -48,7 +48,7 @@ export const services: Service[] = [
     description: "Apoiamos a empresa na construção de equipes mais alinhadas, lideranças preparadas e políticas transparentes para desenvolver e reter talentos.",
     outcomes: ["Papéis e expectativas claros", "Lideranças mais preparadas", "Maior coerência na gestão"],
     deliverables: ["Recrutamento e seleção", "Cargos, salários e competências", "Avaliação de desempenho", "Treinamento e desenvolvimento"],
-    heroImage: "/images/instagram/luis-executivo.png",
+    heroImage: "/images/instagram/luis-executivo.webp",
   },
   {
     slug: "compliance-juridico",

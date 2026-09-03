@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Inter } from "next/font/google";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   twitter: { card: "summary_large_image", title: site.name, description: site.description, images: ["/images/hero-boardroom.png"] },
   alternates: { canonical: "/" },
 };
+
+export const viewport: Viewport = { themeColor: "#071b31" };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const schema = { "@context": "https://schema.org", "@type": "ProfessionalService", name: site.name, description: site.description, areaServed: "Brasil", address: { "@type": "PostalAddress", addressLocality: "Brasília", addressRegion: "DF", addressCountry: "BR" }, telephone: site.phoneDisplay, email: site.email, sameAs: [site.instagram, site.linkedin] };
