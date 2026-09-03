@@ -6,6 +6,11 @@ export type Service = {
   description: string;
   outcomes: string[];
   deliverables: string[];
+  commercialOffer?: {
+    price: string;
+    period: string;
+    note: string;
+  };
 };
 
 export const services: Service[] = [
@@ -16,7 +21,12 @@ export const services: Service[] = [
     summary: "Sua rotina financeira organizada por especialistas, com visão clara do que acontece no negócio.",
     description: "Assumimos processos financeiros essenciais e transformamos dados dispersos em uma visão gerencial confiável para apoiar decisões mais seguras.",
     outcomes: ["Mais previsibilidade de caixa", "Rotina financeira organizada", "Decisões apoiadas por indicadores"],
-    deliverables: ["Contas a pagar e receber", "Conciliação e organização de documentos", "Fluxo de caixa e relatórios gerenciais", "Acompanhamento consultivo"],
+    deliverables: ["Contas a receber", "Contas a pagar", "Controle de transferências", "Conciliação bancária", "Relatórios gerenciais e indicadores financeiros", "Fluxo de caixa mensal e anual", "Precificação e consultoria financeira", "Sistema financeiro incluso"],
+    commercialOffer: {
+      price: "R$ 890",
+      period: "por mês",
+      note: "Valor inicial. O investimento final varia conforme o volume de movimentações e o escopo definido no diagnóstico.",
+    },
   },
   {
     slug: "consultoria-empresarial",
