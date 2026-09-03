@@ -22,3 +22,6 @@
 @media(max-width:900px){.team-grid .team-card{grid-template-columns:190px 1fr}}
 @media(max-width:600px){.team-grid .team-card{grid-template-columns:1fr}.team-photo{min-height:390px}.team-copy{padding:28px}}
 @media(max-width:600px){.hero-desktop-image{display:none}.hero-founders-mobile{display:block;object-position:center 18%}.hero-overlay{background:linear-gradient(90deg,rgba(4,18,33,.9),rgba(4,18,33,.66))}}
+
+/* Progressive enhancement: content must never depend on JavaScript to be visible. */
+@media (prefers-reduced-motion:no-preference){.reveal,.reveal.is-visible{opacity:1;transform:none;animation:heroReveal 600ms cubic-bezier(.4,0,.2,1) both;animation-delay:var(--reveal-delay,0ms)}}
