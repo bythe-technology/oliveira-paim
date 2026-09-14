@@ -2,7 +2,7 @@ import { Briefcase, ChartLineUp, ShieldCheck, UsersThree } from "@phosphor-icons
 
 export const serviceIcons = {
   "bpo-financeiro": ChartLineUp,
-  "consultoria-empresarial": Briefcase,
+  "assessoria-empresarial": Briefcase,
   "gestao-de-pessoas": UsersThree,
   "compliance-juridico": ShieldCheck,
 };

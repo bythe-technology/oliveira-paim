@@ -1,10 +1,10 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 import { PageHero } from "@/components/section";
 import { articles } from "@/lib/content";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "Conteúdos", description: "Conteúdos sobre gestão, finanças, pessoas, compliance e direito empresarial." };
+export const metadata = createMetadata("Conteúdos", "Conteúdos sobre gestão, finanças, pessoas, compliance e direito empresarial.", "/conteudos", "/images/hero-conteudos-editorial.webp");
 
 export default function ConteudosPage() {
   return <><PageHero className="company-hero" eyebrow="Conteúdos" title="Clareza também se constrói com informação." text="Reflexões práticas para líderes que querem tomar decisões mais conscientes e estruturar empresas mais fortes." image="/images/hero-conteudos-editorial.webp" imageAlt="Cena ilustrativa de pesquisa e análise de informações de gestão" /><section className="section"><div className="container articles-grid articles-full">{articles.map((a) => <article className="article-card" key={a.slug}><span>{a.category} · {a.readTime}</span><h2>{a.title}</h2><p>{a.excerpt}</p><Link href={`/conteudos/${a.slug}`}>Ler artigo <ArrowRight /></Link></article>)}</div></section></>;

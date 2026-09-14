@@ -7,11 +7,6 @@ export type Service = {
   outcomes: string[];
   deliverables: string[];
   heroImage: string;
-  commercialOffer?: {
-    price: string;
-    period: string;
-    note: string;
-  };
 };
 
 export const services: Service[] = [
@@ -24,14 +19,9 @@ export const services: Service[] = [
     outcomes: ["Mais previsibilidade de caixa", "Rotina financeira organizada", "Decisões apoiadas por indicadores"],
     deliverables: ["Contas a receber", "Contas a pagar", "Controle de transferências", "Conciliação bancária", "Relatórios gerenciais e indicadores financeiros", "Fluxo de caixa mensal e anual", "Precificação e consultoria financeira", "Sistema financeiro incluso"],
     heroImage: "/images/instagram/luis-financeiro.webp",
-    commercialOffer: {
-      price: "R$ 890",
-      period: "por mês",
-      note: "Valor inicial. O investimento final varia conforme o volume de movimentações e o escopo definido no diagnóstico.",
-    },
   },
   {
-    slug: "consultoria-empresarial",
+    slug: "assessoria-empresarial",
     eyebrow: "Estratégia que sai do papel",
     title: "Assessoria Empresarial",
     summary: "Nossa principal frente de atuação: assessoria integrada em gestão, finanças, pessoas e processos para apoiar a rotina e as decisões da empresa.",
@@ -54,9 +44,9 @@ export const services: Service[] = [
     slug: "compliance-juridico",
     eyebrow: "Crescer com segurança",
     title: "Compliance e Assessoria Jurídica",
-    summary: "Prevenção de riscos, contratos e práticas de governança adequadas à realidade da empresa.",
-    description: "Traduzimos exigências jurídicas e de integridade em instrumentos práticos que protegem relações, dados, reputação e continuidade do negócio.",
-    outcomes: ["Riscos identificados mais cedo", "Relações comerciais protegidas", "Governança proporcional ao negócio"],
+    summary: "Assessoria consultiva em contratos, conformidade, governança e proteção de dados, com atuação técnica e informativa.",
+    description: "Apoiamos a organização jurídica e documental de empresas e projetos, com análise individualizada, caráter preventivo e observância às normas aplicáveis à advocacia.",
+    outcomes: ["Riscos identificados com antecedência", "Relações comerciais mais bem documentadas", "Governança proporcional ao negócio"],
     deliverables: ["Revisão e elaboração de contratos", "Compliance e códigos internos", "LGPD e proteção de dados", "Orientação jurídica empresarial"],
     heroImage: "/images/instagram/eduardo-juridico.png",
   },

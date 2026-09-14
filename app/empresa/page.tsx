@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { Compass, Handshake, Scales, Target } from "@phosphor-icons/react/dist/ssr";
 import { SocialCulturalSection } from "@/components/social-cultural-section";
 import { CtaBand } from "@/components/cta";
 import { PageHero, SectionTitle } from "@/components/section";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = { title: "A empresa", description: "Conheça a Oliveira & Paim e sua abordagem integrada de assessoria empresarial." };
+export const metadata = createMetadata("A empresa", "Conheça a Oliveira & Paim, seus diretores e sua abordagem integrada de assessoria empresarial.", "/empresa", "/images/hero-empresa-editorial.webp");
 
 export default function EmpresaPage() {
   const values = [[Compass, "Clareza", "Traduzir cenários complexos em prioridades compreensíveis."], [Target, "Praticidade", "Conectar estratégia à rotina e às decisões que precisam acontecer."], [Scales, "Responsabilidade", "Atuar com critério técnico, ética e respeito ao contexto."], [Handshake, "Proximidade", "Construir soluções com diálogo, presença e acompanhamento."]];
