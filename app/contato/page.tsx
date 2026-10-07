@@ -3,7 +3,7 @@ import { PageHero } from "@/components/section";
 import { site, whatsappUrl } from "@/lib/site";
 import { createMetadata } from "@/lib/metadata";
 
-export const metadata = createMetadata("Contato", "Fale com a Oliveira & Paim Assessoria Empresarial. Atendimento em todo o Brasil.", "/contato", "/images/hero-contato-editorial.webp");
+export const metadata = createMetadata("Contato em Brasília", "Fale com a Oliveira & Paim Assessoria Empresarial e Jurídica. Sede em Brasília e atendimento em todo o Brasil.", "/contato", "/images/hero-contato-editorial.webp");
 
 export default function ContatoPage() {
   const items = [[WhatsappLogo, "WhatsApp", site.phoneDisplay, whatsappUrl("Olá! Vim pelo site da Oliveira & Paim e gostaria de conversar.")], [EnvelopeSimple, "E-mail", site.email, `mailto:${site.email}`], [MapPin, "Localização", site.location, null], [InstagramLogo, "Instagram", "@oliveiraepaim", site.instagram], [LinkedinLogo, "LinkedIn", "Oliveira & Paim", site.linkedin]] as const;

@@ -4,5 +4,5 @@ export const serviceIcons = {
   "bpo-financeiro": ChartLineUp,
   "assessoria-empresarial": Briefcase,
   "gestao-de-pessoas": UsersThree,
-  "compliance-juridico": ShieldCheck,
+  "assessoria-juridica-empresarial": ShieldCheck,
 };

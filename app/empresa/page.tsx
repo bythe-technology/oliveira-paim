@@ -5,7 +5,7 @@ import { CtaBand } from "@/components/cta";
 import { PageHero, SectionTitle } from "@/components/section";
 import { createMetadata } from "@/lib/metadata";
 
-export const metadata = createMetadata("A empresa", "Conheça a Oliveira & Paim, seus diretores e sua abordagem integrada de assessoria empresarial.", "/empresa", "/images/hero-empresa-editorial.webp");
+export const metadata = createMetadata("Sobre a Empresa e os Diretores", "Conheça a Oliveira & Paim, seus diretores em Brasília e sua atuação nacional em assessoria empresarial e jurídica.", "/empresa", "/images/hero-empresa-editorial.webp");
 
 export default function EmpresaPage() {
   const values = [[Compass, "Clareza", "Traduzir cenários complexos em prioridades compreensíveis."], [Target, "Praticidade", "Conectar estratégia à rotina e às decisões que precisam acontecer."], [Scales, "Responsabilidade", "Atuar com critério técnico, ética e respeito ao contexto."], [Handshake, "Proximidade", "Construir soluções com diálogo, presença e acompanhamento."]];

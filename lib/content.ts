@@ -2,6 +2,9 @@ export type Service = {
   slug: string;
   eyebrow: string;
   title: string;
+  seoTitle: string;
+  seoDescription: string;
+  keywords: string[];
   summary: string;
   description: string;
   outcomes: string[];
@@ -14,6 +17,9 @@ export const services: Service[] = [
     slug: "bpo-financeiro",
     eyebrow: "Controle para decidir melhor",
     title: "BPO Financeiro",
+    seoTitle: "BPO Financeiro em Brasília",
+    seoDescription: "BPO financeiro em Brasília e atendimento nacional: contas a pagar e receber, conciliação, fluxo de caixa, relatórios e consultoria financeira.",
+    keywords: ["BPO financeiro", "terceirização financeira", "BPO financeiro Brasília", "gestão financeira empresarial"],
     summary: "Sua rotina financeira organizada por especialistas, com visão clara do que acontece no negócio.",
     description: "Assumimos processos financeiros essenciais e transformamos dados dispersos em uma visão gerencial confiável para apoiar decisões mais seguras.",
     outcomes: ["Mais previsibilidade de caixa", "Rotina financeira organizada", "Decisões apoiadas por indicadores"],
@@ -24,6 +30,9 @@ export const services: Service[] = [
     slug: "assessoria-empresarial",
     eyebrow: "Estratégia que sai do papel",
     title: "Assessoria Empresarial",
+    seoTitle: "Assessoria Empresarial em Brasília",
+    seoDescription: "Assessoria empresarial para organizar gestão, finanças, pessoas e processos. Diagnóstico, planejamento e acompanhamento para pequenas e médias empresas.",
+    keywords: ["assessoria empresarial", "consultoria empresarial", "assessoria empresarial Brasília", "diagnóstico empresarial"],
     summary: "Nossa principal frente de atuação: assessoria integrada em gestão, finanças, pessoas e processos para apoiar a rotina e as decisões da empresa.",
     description: "Analisamos o momento da empresa, identificamos gargalos e estruturamos um plano objetivo, com prioridades, responsáveis e indicadores.",
     outcomes: ["Prioridades bem definidas", "Processos mais eficientes", "Crescimento com método"],
@@ -34,6 +43,9 @@ export const services: Service[] = [
     slug: "gestao-de-pessoas",
     eyebrow: "Pessoas certas, estrutura saudável",
     title: "Gestão de Pessoas",
+    seoTitle: "Gestão de Pessoas para Empresas",
+    seoDescription: "Assessoria em gestão de pessoas, recrutamento e seleção, liderança, desempenho, cargos e salários para empresas em Brasília e todo o Brasil.",
+    keywords: ["gestão de pessoas", "recrutamento e seleção", "consultoria de RH Brasília", "desenvolvimento de lideranças"],
     summary: "Práticas de RH que conectam talentos, liderança e cultura aos objetivos da organização.",
     description: "Apoiamos a empresa na construção de equipes mais alinhadas, lideranças preparadas e políticas transparentes para desenvolver e reter talentos.",
     outcomes: ["Papéis e expectativas claros", "Lideranças mais preparadas", "Maior coerência na gestão"],
@@ -41,9 +53,12 @@ export const services: Service[] = [
     heroImage: "/images/instagram/luis-executivo.webp",
   },
   {
-    slug: "compliance-juridico",
+    slug: "assessoria-juridica-empresarial",
     eyebrow: "Crescer com segurança",
     title: "Compliance e Assessoria Jurídica",
+    seoTitle: "Assessoria Jurídica Empresarial em Brasília",
+    seoDescription: "Assessoria jurídica empresarial em Brasília para contratos, compliance, LGPD, governança e prevenção de riscos, com atendimento em todo o Brasil.",
+    keywords: ["assessoria jurídica empresarial", "advogado empresarial Brasília", "contratos empresariais", "compliance", "LGPD para empresas"],
     summary: "Assessoria consultiva em contratos, conformidade, governança e proteção de dados, com atuação técnica e informativa.",
     description: "Apoiamos a organização jurídica e documental de empresas e projetos, com análise individualizada, caráter preventivo e observância às normas aplicáveis à advocacia.",
     outcomes: ["Riscos identificados com antecedência", "Relações comerciais mais bem documentadas", "Governança proporcional ao negócio"],

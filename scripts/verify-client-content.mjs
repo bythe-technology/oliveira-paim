@@ -7,7 +7,7 @@ const { chromium } = await import(process.env.PLAYWRIGHT_MODULE ? pathToFileURL(
   try {
     for (const width of [375, 1268]) {
       const page = await browser.newPage({ viewport: { width, height: 900 }, reducedMotion: 'reduce' });
-      const routes = ['', 'empresa', 'contato', 'solucoes', 'diagnostico', 'privacidade', 'conteudos', 'solucoes/bpo-financeiro', 'solucoes/assessoria-empresarial', 'solucoes/gestao-de-pessoas', 'solucoes/compliance-juridico', 'conteudos/diagnostico-empresarial', 'conteudos/bpo-financeiro-organizacao', 'conteudos/contratos-como-protecao', 'conteudos/compliance-lgpd-pmes'];
+      const routes = ['', 'empresa', 'contato', 'solucoes', 'diagnostico', 'privacidade', 'conteudos', 'solucoes/bpo-financeiro', 'solucoes/assessoria-empresarial', 'solucoes/gestao-de-pessoas', 'solucoes/assessoria-juridica-empresarial', 'conteudos/diagnostico-empresarial', 'conteudos/bpo-financeiro-organizacao', 'conteudos/contratos-como-protecao', 'conteudos/compliance-lgpd-pmes'];
       for (const route of routes) {
         await page.goto(`${process.env.TEST_BASE_URL || 'http://127.0.0.1:3003'}/${route}`);
         assert.equal(page.url().includes(route), true);
