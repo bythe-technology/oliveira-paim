@@ -2,7 +2,7 @@ import type { MetadataRoute } from "next";
 import { articles, services } from "@/lib/content";
 import { site } from "@/lib/site";
 
-const updatedAt = new Date("2026-10-07T12:00:00-03:00");
+const updatedAt = new Date("2026-11-04T12:00:00-03:00");
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const corePages = [

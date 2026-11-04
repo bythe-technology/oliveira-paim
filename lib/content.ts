@@ -14,6 +14,25 @@ export type Service = {
 
 export const services: Service[] = [
   {
+    slug: "consultoria-planejamento-tributario",
+    eyebrow: "Direito tributário e gestão fiscal",
+    title: "Consultoria e Planejamento Tributário",
+    seoTitle: "Consultoria e Planejamento Tributário em Brasília",
+    seoDescription: "Consultoria tributária, assessoria fiscal preventiva, fiscalizações, contencioso administrativo e judicial e recuperação de créditos fiscais.",
+    keywords: ["consultoria tributária", "planejamento tributário", "assessoria fiscal", "recuperação de créditos fiscais"],
+    summary: "Conhecimentos jurídicos e contábeis integrados para orientar decisões tributárias em múltiplos setores, nas esferas administrativa e judicial.",
+    description: "Nossa equipe multidisciplinar integra conhecimentos jurídicos e contábeis para oferecer consultoria e planejamento tributário de alta precisão em múltiplos setores da economia, cobrindo as esferas administrativa e judicial. Realizamos auditorias voltadas a reestruturações societárias e prestamos assessoria fiscal preventiva, trabalhando lado a lado com os departamentos fiscal e contábil dos clientes para mitigar riscos com o fisco.",
+    outcomes: ["Análise tributária alinhada ao setor de atuação", "Integração com os departamentos fiscal e contábil", "Assessoria preventiva e acompanhamento de riscos fiscais"],
+    deliverables: [
+      "Consultoria Tributária Setorial: atuação especializada em infraestrutura, construção civil, serviços, indústria, comércio, agronegócio, educação, franquias e tecnologia.",
+      "Acompanhamento de Fiscalizações: suporte estratégico em procedimentos fiscais nas instâncias municipal, estadual e federal.",
+      "Contencioso Administrativo: defesa técnica contra autos de infração e demais autuações junto aos órgãos fiscais.",
+      "Contencioso Judicial: condução de ações e medidas judiciais relacionadas a matérias tributárias.",
+      "Recuperação de Créditos Fiscais: identificação e restituição de tributos pagos indevidamente ou a maior, conforme análise técnica e requisitos legais.",
+    ],
+    heroImage: "/images/hero-empresa-editorial.webp",
+  },
+  {
     slug: "bpo-financeiro",
     eyebrow: "Controle para decidir melhor",
     title: "BPO Financeiro",
