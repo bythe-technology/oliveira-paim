@@ -1,0 +1,13 @@
+.image {
+  display: block;
+  width: 112px;
+  height: 63px;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .image {
+    width: 96px;
+    height: 54px;
+  }
+}
