@@ -27,6 +27,8 @@
 .form-layout p{font-size:17px;line-height:1.8}
 .form-layout h2{font-size:clamp(34px,4vw,48px)}
 #solicitar-diagnostico{scroll-margin-top:110px}
+.instagram-feed{grid-template-columns:repeat(3,minmax(0,1fr))}
+@media(max-width:1050px){.instagram-feed{grid-template-columns:repeat(2,minmax(0,1fr))}}
 .diagnostic-form{box-shadow:none;border:0;border-radius:6px}
 .diagnostic-form label{font-size:14px}
 .diagnostic-form input,.diagnostic-form textarea{background:#fff}

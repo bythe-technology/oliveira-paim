@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 declare global { interface Window { dataLayer?: unknown[]; gtag?: (...args: unknown[]) => void; } }
 const storageKey = "op_cookie_consent";
@@ -20,6 +21,7 @@ function loadAnalytics() {
 }
 
 export function AnalyticsConsent() {
+  const pathname = usePathname();
   const [choice, setChoice] = useState<string | null>(null);
   useEffect(() => {
     if (!measurementId) return;
@@ -53,7 +55,7 @@ export function AnalyticsConsent() {
     document.addEventListener("click", clicks);
     window.addEventListener("scroll", scroll, { passive: true });
     return () => { window.removeEventListener("op:track", track); document.removeEventListener("click", clicks); window.removeEventListener("scroll", scroll); };
-  }, []);
+  }, [pathname]);
   if (!measurementId || choice) return null;
   const decide = (value: "accepted" | "rejected") => { localStorage.setItem(storageKey, value); setChoice(value); if (value === "accepted") loadAnalytics(); };
   return <aside className="cookie-banner" aria-label="Preferências de cookies"><p>Usamos cookies analíticos opcionais para entender a navegação e melhorar o site. Você pode aceitar ou recusar.</p><div><button className="button button-gold" onClick={() => decide("accepted")}>Aceitar</button><button className="button cookie-reject" onClick={() => decide("rejected")}>Recusar</button></div></aside>;
