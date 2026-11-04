@@ -5,7 +5,7 @@ import styles from "./logo.module.css";
 export function Logo({ light = false }: { light?: boolean }) {
   return (
     <Link className={`brand ${light ? "brand-light" : ""}`} href="/" aria-label="Oliveira & Paim - início">
-      <Image src="/images/oliveira-paim-logo.webp" alt="Oliveira & Paim Assessoria Empresarial" width={121} height={68} className={styles.image} priority />
+      <Image src={light ? "/images/logo-gold.png" : "/images/logo-positive.png"} alt="Oliveira & Paim Assessoria Empresarial" width={1280} height={620} className={styles.image} priority />
     </Link>
   );
 }

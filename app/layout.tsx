@@ -8,6 +8,7 @@ import { StructuredData } from "@/components/structured-data";
 import { site } from "@/lib/site";
 import { organizationSchema, websiteSchema } from "@/lib/structured-data";
 import "./globals.css";
+import "./refinements.css";
 
 const serif = Cormorant_Garamond({ subsets: ["latin"], variable: "--font-serif", weight: ["500", "600", "700"], display: "swap" });
 const sans = Inter({ subsets: ["latin"], variable: "--font-sans", display: "swap" });
