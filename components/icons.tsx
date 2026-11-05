@@ -1,9 +1,11 @@
-import { Briefcase, ChartLineUp, ShieldCheck, UsersThree } from "@phosphor-icons/react/dist/ssr";
+import { Briefcase, ChartLineUp, Megaphone, ShieldCheck, Tag, UsersThree } from "@phosphor-icons/react/dist/ssr";
 
 export const serviceIcons = {
-  "consultoria-planejamento-tributario": Briefcase,
-  "bpo-financeiro": ChartLineUp,
   "assessoria-empresarial": Briefcase,
-  "gestao-de-pessoas": UsersThree,
+  "bpo-financeiro": ChartLineUp,
+  "registro-de-marca": Tag,
   "assessoria-juridica-empresarial": ShieldCheck,
+  "gestao-de-pessoas": UsersThree,
+  "consultoria-planejamento-tributario": Briefcase,
+  "consultoria-de-marketing": Megaphone,
 };

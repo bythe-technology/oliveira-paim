@@ -19,9 +19,9 @@ export const metadata = {
 };
 
 const frequentlyAskedQuestions = [
-  { question: "O que faz a Oliveira & Paim?", answer: "A Oliveira & Paim presta assessoria empresarial e jurídica para pequenas e médias empresas, com atuação em gestão, finanças, pessoas, contratos, compliance e LGPD." },
+  { question: "O que faz a Oliveira & Paim?", answer: "A Oliveira & Paim oferece assessoria empresarial e jurídica, BPO financeiro, registro de marca, gestão de pessoas, consultoria tributária e consultoria de marketing para organizações." },
   { question: "Onde a Oliveira & Paim atende?", answer: "A empresa está sediada em Brasília, no Distrito Federal, e atende organizações de todo o Brasil." },
-  { question: "Quais serviços a Oliveira & Paim oferece?", answer: "As principais frentes são Assessoria Empresarial, BPO Financeiro, Gestão de Pessoas, Assessoria Jurídica Empresarial com Compliance e Consultoria e Planejamento Tributário." },
+  { question: "Quais serviços a Oliveira & Paim oferece?", answer: "As principais frentes são Assessoria Empresarial, BPO Financeiro, Registro de Marca, Compliance e Assessoria Jurídica, Gestão de Pessoas, Consultoria e Planejamento Tributário e Consultoria de Marketing." },
 ];
 
 export default function Home() {
