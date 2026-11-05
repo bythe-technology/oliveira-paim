@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { DiagnosticForm } from "@/components/diagnostic-form";
 import { PageHero, SectionTitle } from "@/components/section";
-import { getDiagnosticTopic } from "@/lib/diagnostic-topics";
+import { getDiagnosticCampaign, getDiagnosticTopic } from "@/lib/diagnostic-topics";
 import { createMetadata } from "@/lib/metadata";
 
 export const metadata = createMetadata("Diagnóstico Empresarial Completo", "Entenda as causas dos desafios da sua empresa. O diagnóstico conecta finanças, processos, pessoas e riscos para orientar prioridades e um plano de ação.", "/diagnostico", "/images/instagram/luis-financeiro.webp");
@@ -15,12 +15,20 @@ const dimensions = [
 const signs = ["Fecha o mês sem saber a margem real", "Fatura, mas o caixa não acompanha", "Decide pela urgência da semana", "O dono é o gargalo de tudo", "O preço foi definido olhando o concorrente", "A equipe não sabe a prioridade do trimestre", "Crescer aumentou o problema"];
 
 type DiagnosticoPageProps = {
-  searchParams: Promise<{ assunto?: string | string[] }>;
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
 };
 
 export default async function DiagnosticoPage({ searchParams }: DiagnosticoPageProps) {
-  const { assunto } = await searchParams;
-  const topic = getDiagnosticTopic(Array.isArray(assunto) ? assunto[0] : assunto);
+  const params = await searchParams;
+  const topic = getDiagnosticTopic(Array.isArray(params.assunto) ? params.assunto[0] : params.assunto);
+  const firstValue = (key: string) => Array.isArray(params[key]) ? params[key]?.[0] : params[key];
+  const campaign = getDiagnosticCampaign({
+    utm_source: firstValue("utm_source"),
+    utm_medium: firstValue("utm_medium"),
+    utm_campaign: firstValue("utm_campaign"),
+    utm_content: firstValue("utm_content"),
+    utm_term: firstValue("utm_term"),
+  });
 
   return <>
     <PageHero eyebrow="Diagnóstico empresarial" title="Antes de decidir, entenda o que está acontecendo." text="O sintoma pode ser o mesmo. A causa quase nunca é. O diagnóstico conecta finanças, processos, pessoas e riscos para entender o cenário da empresa e orientar o próximo passo." image="/images/instagram/luis-financeiro.webp" imageAlt="Luís Henrique Oliveira Paim, Diretor Executivo da Oliveira & Paim"><Link className="button button-gold" href="#solicitar-diagnostico">Solicitar diagnóstico completo</Link></PageHero>
@@ -28,6 +36,6 @@ export default async function DiagnosticoPage({ searchParams }: DiagnosticoPageP
     <section className="section section-soft"><div className="container"><SectionTitle eyebrow="Visão integrada" title="Quatro dimensões, uma leitura do negócio." text="Na rotina, essas áreas costumam ser tratadas separadamente. O diagnóstico analisa suas relações." /><div className="values-grid">{dimensions.map(([title, text]) => <article key={title}><h3>{title}</h3><p>{text}</p></article>)}</div></div></section>
     <section className="section dark-section"><div className="container split"><SectionTitle eyebrow="O que um diagnóstico entrega" title="Uma direção para os próximos passos." text="O trabalho organiza o cenário e transforma a análise em prioridades, conforme o escopo definido para sua empresa." /><ul><li>Prioridades para os próximos 30, 60 e 90 dias.</li><li>Indicadores que a empresa vai acompanhar.</li><li>O retrato financeiro do momento.</li><li>Um plano com responsáveis e prazos.</li></ul></div></section>
     <section className="section"><div className="container split"><SectionTitle eyebrow="Reconhece algum desses sinais?" title="Quando vale olhar para a empresa como um todo." text="Esses sinais ajudam a iniciar a conversa. A análise do contexto é que orienta as prioridades." /><ul>{signs.map(sign => <li key={sign}>{sign}</li>)}</ul></div></section>
-    <section className="section section-soft" id="solicitar-diagnostico"><div className="container form-layout"><div><h2>Conte o que está acontecendo.</h2><p>Informe seu nome, sua empresa e o principal desafio que está vivendo. Não é necessário escolher uma área ou identificar a causa agora.</p><p>A solicitação seguirá para o WhatsApp da nossa equipe, onde combinaremos os próximos passos e o escopo do diagnóstico.</p></div><DiagnosticForm topic={topic} /></div></section>
+    <section className="section section-soft" id="solicitar-diagnostico"><div className="container form-layout"><div><h2>Conte o que está acontecendo.</h2><p>Informe seu nome, sua empresa e o principal desafio que está vivendo. Você pode indicar o tema que trouxe você até aqui ou manter o diagnóstico amplo; não precisa saber a causa agora.</p><p>A solicitação seguirá para o WhatsApp da nossa equipe, onde combinaremos os próximos passos e o escopo do diagnóstico.</p><ul className="diagnostic-deliverables"><li><strong>Leitura integrada</strong><span>Finanças, processos, pessoas e riscos.</span></li><li><strong>Prioridades e indicadores</strong><span>Uma visão organizada do que acompanhar.</span></li><li><strong>Plano de ação</strong><span>Próximos passos, responsáveis e prazos.</span></li></ul></div><DiagnosticForm topic={topic} campaign={campaign} /></div></section>
   </>;
 }

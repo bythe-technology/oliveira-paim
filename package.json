@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-default-type=module --disable-warning=ExperimentalWarning --experimental-strip-types --test tests/diagnostic-topics.test.mjs"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",
