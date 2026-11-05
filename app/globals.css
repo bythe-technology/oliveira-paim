@@ -62,3 +62,24 @@ html{overflow-x:clip;scroll-padding-top:110px}body{-webkit-tap-highlight-color:r
 .cookie-banner{position:fixed;z-index:2000;right:20px;bottom:20px;left:20px;display:flex;max-width:760px;margin:auto;padding:20px;align-items:center;justify-content:space-between;gap:20px;border:1px solid rgba(214,168,83,.5);border-radius:16px;background:#071b31;color:#fff;box-shadow:0 18px 70px rgba(0,0,0,.35)}.cookie-banner p{margin:0;line-height:1.55}.cookie-banner>div{display:flex;flex-shrink:0;gap:10px}.cookie-banner .button{min-height:44px;padding:10px 18px}.cookie-reject{border:1px solid #8190a0;background:transparent;color:#fff}@media(max-width:650px){.cookie-banner{align-items:stretch;flex-direction:column}.cookie-banner>div{display:grid;grid-template-columns:1fr 1fr}}
 .diagnostic-deliverables{list-style:none;margin:26px 0 0;padding:0;border-top:1px solid rgba(7,27,49,.16)}.diagnostic-deliverables li{display:flex;flex-direction:column;gap:2px;padding:14px 0;border-bottom:1px solid rgba(7,27,49,.16)}.diagnostic-deliverables strong{color:var(--navy)}.diagnostic-deliverables span,.form-context{font-size:14px;color:var(--muted)}.form-context{margin:-8px 0 20px;line-height:1.55}.diagnostic-form .form-context{margin:-8px 0 20px}
 @media(max-width:600px){.service-strip{scroll-snap-type:x proximity}.service-strip .strip-grid{display:flex;grid-template-columns:none;width:max-content;min-width:100%;padding:0 14px}.service-strip .strip-grid a{flex:0 0 min(78vw,270px);scroll-snap-align:start}.service-strip .strip-grid a:last-child{border-right:0}}
+
+/* Home services are organized by client need, with distinct icons per theme and service. */
+.service-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.service-group{display:flex;min-width:0;flex-direction:column;padding:28px 26px 16px;border:1px solid #dfe2e3;border-top:2px solid var(--gold);background:rgba(255,255,255,.82);transition:transform 240ms var(--ease),border-color 240ms var(--ease),box-shadow 240ms var(--ease)}
+.service-group:hover{transform:translateY(-3px);border-color:rgba(214,168,83,.62);box-shadow:0 18px 40px rgba(7,27,49,.07)}
+.service-group-heading{display:grid;grid-template-columns:40px minmax(0,1fr);align-items:start;gap:14px;min-height:112px;padding-bottom:22px}
+.service-group-heading>svg{color:#a8792c;margin-top:4px}
+.service-group-heading h3{margin:0;color:var(--navy);font:600 25px/1.1 var(--font-serif);text-wrap:balance}
+.service-group-heading p{margin:9px 0 0;color:#667182;font-size:13px;line-height:1.55}
+.service-group-list{display:flex;flex:1;flex-direction:column;border-top:1px solid #e3e5e6}
+.service-group-link{display:grid;flex:1;grid-template-columns:24px minmax(0,1fr) 18px;align-items:center;gap:12px;min-height:64px;padding:12px 2px;border-bottom:1px solid #e3e5e6;color:var(--ink);transition:color 180ms var(--ease),padding 180ms var(--ease)}
+.service-group-link:last-child{border-bottom:0}
+.service-group-link>svg:first-child{color:#a8792c}
+.service-group-link>svg:last-child{color:#8a5b12;transition:transform 180ms var(--ease)}
+.service-group-link>span{min-width:0;font-size:14px;font-weight:650;line-height:1.35}
+.service-group-link small{display:block;margin-top:4px;color:#667182;font-size:12.5px;font-weight:400;line-height:1.5}
+.service-group-link:hover{padding-right:0;padding-left:6px;color:#80540f}
+.service-group-link:hover>svg:last-child{transform:translateX(3px)}
+@media(max-width:980px){.service-groups{grid-template-columns:repeat(2,minmax(0,1fr))}.service-group:last-child:nth-child(odd){grid-column:1/-1;width:calc((100% - 18px)/2);justify-self:center}}
+@media(max-width:680px){.service-groups{grid-template-columns:1fr;gap:14px}.service-group:last-child:nth-child(odd){grid-column:auto;width:100%}.service-group{padding:23px 20px 12px}.service-group-heading{min-height:0;padding-bottom:18px}.service-group-heading h3{font-size:24px}.service-group-link{min-height:62px}.service-group-link small{font-size:13px}}
+@media(prefers-reduced-motion:reduce){.service-group,.service-group-link,.service-group-link>svg:last-child{transition:none!important;transform:none!important}}

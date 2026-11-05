@@ -1,5 +1,14 @@
+export type ServiceSlug =
+  | "assessoria-empresarial"
+  | "bpo-financeiro"
+  | "registro-de-marca"
+  | "assessoria-juridica-empresarial"
+  | "gestao-de-pessoas"
+  | "consultoria-planejamento-tributario"
+  | "consultoria-de-marketing";
+
 export type Service = {
-  slug: string;
+  slug: ServiceSlug;
   eyebrow: string;
   title: string;
   seoTitle: string;
@@ -109,6 +118,36 @@ export const services: Service[] = [
     outcomes: ["Mais clareza sobre prioridades de comunicação", "Planejamento compatível com os recursos da empresa", "Critérios para acompanhar as ações definidas"],
     deliverables: ["Leitura do posicionamento e do público", "Diretrizes de mensagem", "Planejamento de canais e conteúdo", "Indicadores para acompanhamento das ações"],
     heroImage: "/images/hero-conteudos-editorial.webp",
+  },
+];
+
+export type HomeServiceGroupId = "operations" | "protection" | "growth";
+
+export type HomeServiceGroup = {
+  id: HomeServiceGroupId;
+  title: string;
+  description: string;
+  serviceSlugs: ServiceSlug[];
+};
+
+export const homeServiceGroups: HomeServiceGroup[] = [
+  {
+    id: "operations",
+    title: "Organizar a operação",
+    description: "Gestão, finanças e pessoas com mais clareza na rotina.",
+    serviceSlugs: ["assessoria-empresarial", "bpo-financeiro", "gestao-de-pessoas"],
+  },
+  {
+    id: "protection",
+    title: "Proteger a empresa",
+    description: "Atenção aos aspectos jurídicos, de conformidade e tributários.",
+    serviceSlugs: ["assessoria-juridica-empresarial", "consultoria-planejamento-tributario"],
+  },
+  {
+    id: "growth",
+    title: "Crescer com apoio",
+    description: "Orientação para cuidar da marca e planejar a comunicação.",
+    serviceSlugs: ["registro-de-marca", "consultoria-de-marketing"],
   },
 ];
 

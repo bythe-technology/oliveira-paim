@@ -8,7 +8,7 @@ Usar `logo-gold.png` em fundo escuro, `logo-positive.png` em fundo claro e `logo
 
 ## Apresentação institucional
 
-Paleta azul-marinho #071b31, dourado #d6ad58, superfícies claras existentes. Inter no texto e Cormorant Garamond nos títulos. Botões sólidos, raio 4 px, foco visível e alvos de pelo menos 44 px. Cards de serviços em 4/2/1 colunas; faixa de atalhos da home com rolagem horizontal por toque no celular. Texto de apoio 15–17 px e entrelinha 1.7. Seções 96 px no desktop e 64 px no celular. Evitar sombras e efeitos ornamentais excessivos. Preservar header flutuante e fotos de abertura aprovadas.
+Paleta azul-marinho #071b31, dourado #d6ad58, superfícies claras existentes. Inter no texto e Cormorant Garamond nos títulos. Botões sólidos, raio 4 px, foco visível e alvos de pelo menos 44 px. Na home, os serviços aparecem em três grupos temáticos — Organizar a operação, Proteger a empresa e Crescer com apoio —, cada um com ícone de grupo e ícones próprios dos serviços. Grade responsiva em 3/2/1 colunas; a página /solucoes mantém os sete serviços na ordem aprovada. Texto de apoio 15–17 px e entrelinha 1.7. Seções 96 px no desktop e 64 px no celular. Evitar sombras e efeitos ornamentais excessivos. Preservar header flutuante e fotos de abertura aprovadas.
 
 ## Diagnóstico
 

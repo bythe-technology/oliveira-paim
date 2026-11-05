@@ -1,11 +1,17 @@
-import { Briefcase, ChartLineUp, Megaphone, ShieldCheck, Tag, UsersThree } from "@phosphor-icons/react/dist/ssr";
+import { Buildings, ChartLineUp, CurrencyCircleDollar, Megaphone, Scales, ShieldCheck, Tag, TrendUp, UsersThree } from "@phosphor-icons/react/dist/ssr";
 
 export const serviceIcons = {
-  "assessoria-empresarial": Briefcase,
+  "assessoria-empresarial": Buildings,
   "bpo-financeiro": ChartLineUp,
   "registro-de-marca": Tag,
-  "assessoria-juridica-empresarial": ShieldCheck,
+  "assessoria-juridica-empresarial": Scales,
   "gestao-de-pessoas": UsersThree,
-  "consultoria-planejamento-tributario": Briefcase,
+  "consultoria-planejamento-tributario": CurrencyCircleDollar,
   "consultoria-de-marketing": Megaphone,
+};
+
+export const serviceGroupIcons = {
+  operations: Buildings,
+  protection: ShieldCheck,
+  growth: TrendUp,
 };
