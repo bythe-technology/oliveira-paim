@@ -33,7 +33,7 @@ export const services: Service[] = [
     description: "Analisamos o momento da empresa, identificamos gargalos e estruturamos um plano objetivo, com prioridades, responsáveis e indicadores.",
     outcomes: ["Prioridades bem definidas", "Processos mais eficientes", "Crescimento com método"],
     deliverables: ["Diagnóstico empresarial", "Planejamento estratégico", "Mapeamento e melhoria de processos", "Indicadores e plano de ação"],
-    heroImage: "/images/instagram/socios.webp",
+    heroImage: "/images/assessoria-reuniao-estrategica.webp",
   },
   {
     slug: "bpo-financeiro",
@@ -72,7 +72,7 @@ export const services: Service[] = [
     description: "Apoiamos a organização jurídica e documental de empresas e projetos, com análise individualizada, caráter preventivo e observância às normas aplicáveis à advocacia.",
     outcomes: ["Riscos identificados com antecedência", "Relações comerciais mais bem documentadas", "Governança proporcional ao negócio"],
     deliverables: ["Revisão e elaboração de contratos", "Compliance e códigos internos", "LGPD e proteção de dados", "Orientação jurídica empresarial"],
-    heroImage: "/images/instagram/eduardo-juridico.png",
+    heroImage: "/images/eduardo-assessoria-juridica.webp",
   },
   {
     slug: "gestao-de-pessoas",
@@ -203,7 +203,7 @@ export const articles: Article[] = [
       { title: "Prevenir custa menos", body: "Revisar condições antes da assinatura costuma ser mais simples do que reconstruir evidências e negociar soluções quando o problema já existe." },
       { title: "Contrato também organiza", body: "Além da proteção jurídica, uma boa redação melhora a comunicação entre áreas e parceiros." },
     ],
-    coverImage: "/images/instagram/eduardo-juridico.png",
+    coverImage: "/images/eduardo-contratos.webp",
   },
   {
     slug: "compliance-lgpd-pmes",

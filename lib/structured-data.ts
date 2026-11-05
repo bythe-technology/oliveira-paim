@@ -11,7 +11,7 @@ export function organizationSchema() {
     taxID: site.cnpj,
     url: site.url,
     logo: `${site.url}/icon.png`,
-    image: `${site.url}/images/hero-socios.png`,
+    image: `${site.url}/images/hero-socios-natural.webp`,
     description: site.description,
     email: site.email,
     telephone: site.phoneDisplay,
