@@ -22,7 +22,7 @@ export function organizationSchema() {
       { "@type": "Person", name: "Luís Henrique Oliveira Paim", jobTitle: "Diretor Executivo" },
       { "@type": "Person", name: "Eduardo Osmar de Oliveira", jobTitle: "Diretor Jurídico" },
     ],
-    knowsAbout: ["Assessoria empresarial", "BPO financeiro", "Gestão de pessoas", "Compliance", "LGPD", "Contratos empresariais", "Assessoria jurídica empresarial"],
+    knowsAbout: ["Assessoria empresarial", "BPO financeiro", "Registro de marca no INPI", "Gestão de pessoas", "Compliance", "LGPD", "Contratos empresariais", "Assessoria jurídica empresarial"],
   };
 }
 

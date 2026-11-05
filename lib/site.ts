@@ -4,7 +4,7 @@ export const site = {
   name: "Oliveira & Paim Assessoria Empresarial",
   shortName: "Oliveira & Paim",
   description:
-    "Assessoria empresarial e jurídica em Brasília, com atendimento nacional em BPO financeiro, gestão de pessoas, compliance, LGPD e contratos empresariais.",
+    "Assessoria empresarial e jurídica em Brasília, com atendimento nacional em BPO financeiro, registro de marca, gestão de pessoas, compliance, LGPD e contratos empresariais.",
   alternateNames: ["Oliveira e Paim", "O&P Assessoria Empresarial", "OP Assessoria"],
   keywords: [
     "Oliveira e Paim",
@@ -13,6 +13,8 @@ export const site = {
     "assessoria jurídica empresarial",
     "advogado empresarial Brasília",
     "BPO financeiro Brasília",
+    "registro de marca no INPI",
+    "registro de marca Brasília",
     "consultoria empresarial Brasília",
     "compliance empresarial",
     "LGPD para empresas",

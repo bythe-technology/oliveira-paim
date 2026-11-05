@@ -12,4 +12,8 @@ Paleta azul-marinho #071b31, dourado #d6ad58, superfícies claras existentes. In
 
 ## Diagnóstico
 
-Explicar sintomas, quatro dimensões, entregas e sinais antes do formulário. Assunto fixo Diagnóstico completo; solicitar apenas nome, empresa e desafio. Validar campos e encaminhar ao WhatsApp sem persistir dados.
+Explicar sintomas, quatro dimensões, entregas e sinais antes do formulário. O assunto é opcional e pode vir pré-selecionado pela URL; solicitar apenas nome, empresa e desafio. Validar campos e encaminhar ao WhatsApp sem persistir dados.
+
+## Registro de Marca
+
+Página própria com fotografia editorial exclusiva, marinho/dourado/off-white e ícones lineares do conjunto Phosphor. Organizar o conteúdo em explicação e alcance, benefícios condicionais à concessão, etapas do pedido, escopo, análise preventiva, investimento e FAQ nativo por `<details>`. Esclarecer que a concessão é decisão do INPI; usar chamadas para diagnóstico com `assunto=registro-de-marca` pré-selecionado. Na home, destacar o serviço como possível porta de entrada sem reordenar os três grupos temáticos.

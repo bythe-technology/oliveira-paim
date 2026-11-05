@@ -2,6 +2,7 @@ export const diagnosticTopics = {
   diagnostico: "Diagnóstico empresarial",
   financeiro: "Organização financeira",
   "bpo-financeiro": "BPO Financeiro",
+  "registro-de-marca": "Registro de Marca",
   processos: "Processos empresariais",
   pessoas: "Gestão de pessoas",
   riscos: "Compliance e gestão de riscos",
