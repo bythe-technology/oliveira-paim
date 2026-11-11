@@ -7,6 +7,7 @@ export const diagnosticTopics = {
   pessoas: "Gestão de pessoas",
   riscos: "Compliance e gestão de riscos",
   "consultoria-tributaria": "Consultoria tributária",
+  "consultoria-de-marketing": "Consultoria de Marketing",
   "compliance-lgpd": "Compliance e LGPD",
   "projetos-sociais-culturais": "Projetos sociais e culturais",
 } as const;

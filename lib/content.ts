@@ -15,9 +15,15 @@ export type Service = {
   seoDescription: string;
   keywords: string[];
   summary: string;
+  overviewTitle?: string;
   description: string;
   outcomes: string[];
   deliverables: string[];
+  targetAudience?: {
+    title: string;
+    description: string;
+    items: string[];
+  };
   heroImage: string;
 };
 
@@ -108,15 +114,30 @@ export const services: Service[] = [
   },
   {
     slug: "consultoria-de-marketing",
-    eyebrow: "Posicionamento e comunicação",
+    eyebrow: "Estratégia de marketing",
     title: "Consultoria de Marketing",
-    seoTitle: "Consultoria de Marketing para Empresas",
-    seoDescription: "Consultoria de marketing para organizar posicionamento, comunicação e prioridades de divulgação conforme os objetivos e a realidade da empresa.",
-    keywords: ["consultoria de marketing", "planejamento de marketing", "posicionamento de marca", "estratégia de comunicação"],
-    summary: "Direcionamento para alinhar posicionamento, comunicação e canais aos objetivos do negócio.",
-    description: "A consultoria de marketing ajuda a empresa a organizar prioridades, público, posicionamento e plano de comunicação. As recomendações são construídas de acordo com o cenário e os recursos disponíveis, sem promessa de resultados específicos.",
-    outcomes: ["Mais clareza sobre prioridades de comunicação", "Planejamento compatível com os recursos da empresa", "Critérios para acompanhar as ações definidas"],
-    deliverables: ["Leitura do posicionamento e do público", "Diretrizes de mensagem", "Planejamento de canais e conteúdo", "Indicadores para acompanhamento das ações"],
+    seoTitle: "Consultoria de Marketing Empresarial",
+    seoDescription: "Consultoria de marketing empresarial para posicionamento de marca, conteúdo, canais e alinhamento com vendas, conectada à operação e aos objetivos do negócio.",
+    keywords: ["consultoria de marketing empresarial", "consultoria de marketing Brasília", "posicionamento de marca", "planejamento de conteúdo", "estratégia de canais", "alinhamento entre marketing e vendas", "atração e qualificação de demanda"],
+    summary: "Estratégia de posicionamento, conteúdo e canais conectada aos objetivos e à realidade da empresa.",
+    overviewTitle: "Marketing dentro da estratégia.",
+    description: "Marketing precisa conversar com a gestão, a capacidade operacional e os objetivos comerciais. A consultoria considera o cenário atual, a concorrência e o público para organizar prioridades de posicionamento, comunicação e vendas no curto, médio e longo prazo.",
+    outcomes: ["Leitura do posicionamento, do público e do contexto competitivo", "Diretrizes de mensagem, conteúdo e canais prioritários", "Plano de ação relacionado a objetivos e recursos"],
+    deliverables: [
+      "Diagnóstico e posicionamento de marca: análise do cenário atual, do público e da concorrência para identificar diferenciais que podem orientar a comunicação.",
+      "Planejamento estratégico de conteúdo e canais: definição de diretrizes editoriais, mensagens-chave e ações nos canais mais relevantes para o processo de decisão dos clientes.",
+      "Atração e qualificação de demanda: estratégias para aproximar públicos aderentes, estruturar a captação e qualificar oportunidades, com critérios de acompanhamento compatíveis com os recursos disponíveis.",
+      "Alinhamento entre vendas e posicionamento: revisão da consistência entre o discurso de mercado, a experiência do cliente e o que a empresa entrega.",
+    ],
+    targetAudience: {
+      title: "Marketing com direção de negócio.",
+      description: "A consultoria é indicada para negócios que buscam organizar a comunicação como parte da estratégia empresarial.",
+      items: [
+        "Empresas com operação estruturada que querem avaliar fatores ligados à estagnação das vendas ou à atração de novos clientes.",
+        "Negócios que precisam profissionalizar a comunicação e o posicionamento para conversar com públicos e mercados mais exigentes.",
+        "Empresas que procuram conectar marketing à realidade financeira, operacional e às metas do negócio.",
+      ],
+    },
     heroImage: "/images/hero-conteudos-editorial.webp",
   },
 ];
@@ -146,7 +167,7 @@ export const homeServiceGroups: HomeServiceGroup[] = [
   {
     id: "growth",
     title: "Crescer com apoio",
-    description: "Orientação para cuidar da marca e planejar a comunicação.",
+    description: "Proteção da marca e comunicação alinhada aos objetivos do negócio.",
     serviceSlugs: ["registro-de-marca", "consultoria-de-marketing"],
   },
 ];
