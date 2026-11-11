@@ -46,7 +46,7 @@ export const services: Service[] = [
     description: "Assumimos processos financeiros essenciais e transformamos dados dispersos em uma visão gerencial confiável para apoiar decisões mais seguras. A proposta é definida conforme o porte da empresa, o volume de rotinas e a complexidade da operação.",
     outcomes: ["Mais previsibilidade de caixa", "Rotina financeira organizada", "Decisões apoiadas por indicadores"],
     deliverables: ["Contas a receber", "Contas a pagar", "Controle de transferências", "Conciliação bancária", "Relatórios gerenciais e indicadores financeiros", "Fluxo de caixa mensal e anual", "Precificação e consultoria financeira", "Sistema financeiro incluso"],
-    heroImage: "/images/instagram/luis-financeiro.webp",
+    heroImage: "/images/luis-bpo-financeiro.webp",
   },
   {
     slug: "registro-de-marca",

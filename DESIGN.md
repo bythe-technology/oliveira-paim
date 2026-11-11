@@ -12,7 +12,9 @@ Paleta azul-marinho #071b31, dourado #d6ad58, superfícies claras existentes. In
 
 ## Fotografia
 
-Usar imagens editoriais naturais e diferentes por página. A aparência atual de Eduardo pode inspirar retratos novos; não recortar nem sobrepor o rosto em outra fotografia. A home mantém composições próprias para desktop e celular, com os dois sócios enquadrados.
+Usar as fotos do ensaio de 2024 como referências principais de identidade. Luís tem cabelo curto e cacheado, óculos e barba aparada; Eduardo tem cabelo escuro ondulado, sem óculos, bigode e barba curta. Nas imagens atuais, Eduardo deve ter o cabelo visivelmente mais curto que no ensaio, terminando na nuca, e aparecer um pouco mais baixo que Luís nas composições dos dois. Preservar os traços individuais sem recortar e sobrepor rostos nem misturar identidades.
+
+Usar imagens editoriais naturais e diferentes por página, com fundos de escritório discretos coerentes com o azul-marinho e o dourado. A foto autêntica de Luís pode ser usada diretamente no perfil; cenas novas de atendimento ou análise são ilustrativas, sem clientes, documentos legíveis, marcas ou resultados inventados. Manter intactas as imagens das publicações reais do Instagram. A home mantém composições próprias para desktop e celular, com cabeças dentro do quadro e a relação de altura correta.
 
 ## Diagnóstico
 
